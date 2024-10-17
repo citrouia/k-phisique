@@ -1,0 +1,309 @@
+<html><head><base href="https://example.com/">
+    <meta charset="UTF-8">
+    <title>صفحة الأستاذ عبد الكريم بغداد في العلوم الفيزيائية </title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap');
+    
+      body {
+        font-family: 'Amiri', serif;
+        background-color: #f0f0f0;
+        color: #333;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+        direction: rtl;
+        background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200"><rect width="100%" height="100%" fill="%23f0f0f0"/><circle cx="20" cy="20" r="5" fill="%23ddd"/><circle cx="60" cy="60" r="3" fill="%23ccc"/><path d="M80 40 L100 60 L120 40" stroke="%23bbb" fill="none"/><text x="140" y="120" font-family="Arial" font-size="8" fill="%23999">E=mc²</text><path d="M30 140 Q50 120 70 140" stroke="%23aaa" fill="none"/></svg>');
+        background-repeat: repeat;
+        background-size: 200px 200px;
+      }
+    
+      header {
+        background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+        color: white;
+        text-align: center;
+        padding: 2rem 0;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      }
+    
+      h1 {
+        margin: 0;
+        font-size: 2.5rem;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+      }
+    
+      nav {
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 1rem;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+    
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+      }
+    
+      nav ul li {
+        margin: 0 15px;
+      }
+    
+      nav ul li a {
+        color: #1e3c72;
+        text-decoration: none;
+        font-weight: 700;
+        transition: color 0.3s ease;
+      }
+    
+      nav ul li a:hover {
+        color: #2a5298;
+      }
+    
+      main {
+        max-width: 1000px;
+        margin: 2rem auto;
+        padding: 2rem;
+        background-color: rgba(255, 255, 255, 0.9);
+        box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        border-radius: 10px;
+      }
+    
+      .section {
+        margin-bottom: 3rem;
+      }
+    
+      h2 {
+        color: #1e3c72;
+        border-bottom: 2px solid #1e3c72;
+        padding-bottom: 0.5rem;
+        margin-bottom: 1.5rem;
+      }
+    
+      .resource-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+      }
+    
+      .resource-item {
+        background-color: #ffffff;
+        border-radius: 8px;
+        padding: 1.5rem;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+    
+      .resource-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      }
+    
+      .resource-item h3 {
+        margin-top: 0;
+        color: #2a5298;
+      }
+    
+      .resource-item a {
+        display: inline-block;
+        margin-top: 1rem;
+        color: #1e3c72;
+        text-decoration: none;
+        font-weight: 700;
+        transition: color 0.3s ease;
+      }
+    
+      .resource-item a:hover {
+        color: #2a5298;
+      }
+    
+      footer {
+        background-color: #1e3c72;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+        margin-top: 2rem;
+      }
+    
+      #imageUpload {
+        display: none;
+      }
+    
+      #uploadButton {
+        display: inline-block;
+        background-color: #2a5298;
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+    
+      #uploadButton:hover {
+        background-color: #1e3c72;
+      }
+    
+      #imagePreview {
+        margin-top: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+    
+      .preview-image {
+        max-width: 200px;
+        max-height: 200px;
+        object-fit: cover;
+        border-radius: 5px;
+      }
+    </style>
+    </head>
+    <body>
+        <strong>
+      <header>
+        <h1>دروس الفيزياء للمرحلة المتوسطة</h1>
+      </header>
+      
+      <nav>
+        <ul>
+          <li><a href="#exercises">تمارين</a></li>
+          <li><a href="#exams">اختبارات</a></li>
+          <li><a href="#summaries">ملخصات</a></li>
+          <li><a href="#contact">اتصل بنا</a></li>
+        </ul>
+      </nav>
+      
+      <main>
+        <section id="exercises" class="section">
+          <h2>تمارين</h2>
+          <div class="resource-grid">
+            <div class="resource-item">
+              <h3>القوى والحركة</h3>
+              <p>تمارين على قوانين نيوتن وعلم الحركة.</p>
+              <a href="/exercises/forces-and-motion.pdf">تحميل PDF</a>
+            </div>
+            <div class="resource-item">
+              <h3>الطاقة والشغل</h3>
+              <p>مسائل حول الطاقة الحركية والكامنة والشغل.</p>
+              <a href="/exercises/energy-and-work.pdf">تحميل PDF</a>
+            </div>
+            <div class="resource-item">
+              <h3>الكهرباء والمغناطيسية</h3>
+              <p>تمارين على الدوائر الكهربائية والمجالات المغناطيسية.</p>
+              <a href="/exercises/electricity-and-magnetism.pdf">تحميل PDF</a>
+            </div>
+          </div>
+        </section>
+        
+        <section id="exams" class="section">
+          <h2>اختبارات</h2>
+          <div class="resource-grid">
+            <div class="resource-item">
+              <h3>اختبار الفصل الأول</h3>
+              <p>يغطي الفصول 1 إلى 4 من المنهج.</p>
+              <a href="/exams/first-term-exam.pdf">تحميل PDF</a>
+            </div>
+            <div class="resource-item">
+              <h3>اختبار الفصل الثاني</h3>
+              <p>يغطي الفصول 5 إلى 8 من المنهج.</p>
+              <a href="/exams/second-term-exam.pdf">تحميل PDF</a>
+            </div>
+            <div class="resource-item">
+              <h3>الاختبار النهائي</h3>
+              <p>مراجعة شاملة لمنهج السنة بأكملها.</p>
+              <a href="/exams/final-exam.pdf">تحميل PDF</a>
+            </div>
+          </div>
+        </section>
+        
+        <section id="summaries" class="section">
+          <h2>ملخصات</h2>
+          <div class="resource-grid">
+            <div class="resource-item">
+              <h3>القياسات الفيزيائية</h3>
+              <p>ملخص وحدات القياس والتحويلات.</p>
+              <a href="/summaries/physical-measurements.pdf">تحميل PDF</a>
+            </div>
+            <div class="resource-item">
+              <h3>الحرارة ودرجة الحرارة</h3>
+              <p>المفاهيم الرئيسية في الديناميكا الحرارية.</p>
+              <a href="/summaries/heat-and-temperature.pdf">تحميل PDF</a>
+            </div>
+            <div class="resource-item">
+              <h3>البصريات</h3>
+              <p>المبادئ الأساسية للبصريات الهندسية.</p>
+              <a href="/summaries/optics.pdf">تحميل PDF</a>
+            </div>
+          </div>
+        </section>
+        
+        <section id="contact" class="section">
+          <h2>اتصل بنا</h2>
+          <p>لأي استفسار أو طلب مساعدة، لا تتردد في الاتصال بي:</p>
+          <ul>
+            <li>البريد الإلكتروني: <a href="mailto:professor@physics-middle-school.com">abdelkarim14rwa@gmail.com</a></li>
+            <li>الهاتف: <a href="tel:+966123456789">0559954420</a></li>
+            <li>فيسبوك: <a href="tel:+966123456789">الأستاذ عبد الكريم بغداد</a></li>
+          </ul>
+        </section>
+        <img src="c:\Users\PC\Desktop\Abdelkarim Beghdad\la petite.jpg" height="300px">
+    <!--
+        <section id="uploadSection" class="section">
+          <h2>تحميل الصور</h2>
+          <p>يمكنك تحميل صور لتخصيص الموقع:</p>
+          <input type="file" id="imageUpload" accept="image/*" multiple>
+          <label for="imageUpload" id="uploadButton">اختر الصور</label>
+          <div id="imagePreview"></div>
+        </section>
+    -->
+      </main>
+      
+      <footer>
+        <p>© 2024 موقع أستاذ الفيزياء للمرحلة المتوسطة. جميع الحقوق محفوظة.</p>
+      </footer>
+    
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          const navLinks = document.querySelectorAll('nav a');
+          const imageUpload = document.getElementById('imageUpload');
+          const imagePreview = document.getElementById('imagePreview');
+          
+          navLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+              e.preventDefault();
+              const targetId = this.getAttribute('href').substring(1);
+              const targetElement = document.getElementById(targetId);
+              
+              window.scrollTo({
+                top: targetElement.offsetTop - 70,
+                behavior: 'smooth'
+              });
+            });
+          });
+    
+          imageUpload.addEventListener('change', function(e) {
+            imagePreview.innerHTML = '';
+            const files = e.target.files;
+            for (let i = 0; i < files.length; i++) {
+              const file = files[i];
+              const reader = new FileReader();
+              
+              reader.onload = function(e) {
+                const img = document.createElement('img');
+                img.src = e.target.result;
+                img.classList.add('preview-image');
+                imagePreview.appendChild(img);
+              }
+              
+              reader.readAsDataURL(file);
+            }
+          });
+        });
+      </script>
+    
+        </strong>
+    </body>
+    </html>
